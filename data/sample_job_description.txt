@@ -1,0 +1,15 @@
+Cloud Data Engineer
+
+We are looking for a Cloud Data Engineer to build data pipelines and analytics services on AWS.
+
+Responsibilities
+- Develop Python and SQL data pipelines.
+- Work with AWS services including S3, Glue, Lambda, and Redshift.
+- Build monitoring and data quality checks.
+- Collaborate with analytics, product, and engineering teams.
+
+Preferred Qualifications
+- Experience with orchestration tools such as Airflow.
+- Experience with infrastructure as code.
+- Familiarity with dashboarding tools.
+- Strong written communication skills.

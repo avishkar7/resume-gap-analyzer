@@ -1,0 +1,23 @@
+Jordan Lee
+Data Engineer
+
+Summary
+Data engineer with experience building Python ETL workflows, SQL data models, and dashboards for operational teams.
+
+Skills
+- Python
+- SQL
+- AWS S3
+- Airflow
+- Docker
+- Tableau
+
+Experience
+Data Engineer, Example Analytics
+- Built batch data pipelines that processed customer event data into analytics tables.
+- Improved SQL reporting queries and reduced dashboard load times.
+- Partnered with product managers to define data quality checks.
+
+Projects
+- Created a small Streamlit dashboard for tracking weekly sales metrics.
+- Containerized a Python data validation script with Docker.
