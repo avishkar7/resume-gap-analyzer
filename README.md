@@ -4,6 +4,20 @@ A small Streamlit project that demonstrates Amazon Bedrock model inference with 
 
 The app is intentionally minimal. It opens locally even when AWS credentials, a model ID, or a Knowledge Base are not configured. When Bedrock cannot be reached, the UI shows a readable configuration or request error instead of inventing a response.
 
+## Screenshots
+
+### Direct Bedrock Chat
+
+![Direct Bedrock Chat](demo-chat.png)
+
+### Resume Gap Analyzer
+
+![Resume Gap Analyzer form](demo-resume-analyser.png)
+
+### Resume Gap Analyzer Results
+
+![Resume Gap Analyzer results](demo-resume-analyser-2.png)
+
 ## Architecture
 
 - `app.py` contains the Streamlit UI.
@@ -68,4 +82,3 @@ To use direct chat, your AWS identity needs permission to call Bedrock Runtime a
 - The app does not create or sync a Knowledge Base.
 - Guardrail settings are loaded and displayed, but this minimal demo does not attach guardrails to requests.
 - Error messages are returned to the UI instead of raising exceptions.
-
