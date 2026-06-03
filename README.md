@@ -61,9 +61,6 @@ Then open the local Streamlit URL shown in the terminal.
 
 To use direct chat, your AWS identity needs permission to call Bedrock Runtime and access the configured model. To use the Knowledge Base tab, set `BEDROCK_KNOWLEDGE_BASE_ID` and make sure the Knowledge Base already exists in the selected AWS region.
 
-## Screenshots
-
-Add screenshots here after running the app locally.
 
 ## Limitations
 
@@ -72,6 +69,3 @@ Add screenshots here after running the app locally.
 - Guardrail settings are loaded and displayed, but this minimal demo does not attach guardrails to requests.
 - Error messages are returned to the UI instead of raising exceptions.
 
-## Resume Bullet
-
-Built a Streamlit-based Amazon Bedrock demo using `boto3`, the Converse API, and optional Knowledge Bases RAG to compare resumes against job descriptions and surface skill gaps with concise markdown recommendations.
