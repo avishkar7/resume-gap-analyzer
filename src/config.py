@@ -16,6 +16,9 @@ class Settings(BaseModel):
     bedrock_knowledge_base_id: str = Field(
         default_factory=lambda: os.getenv("BEDROCK_KNOWLEDGE_BASE_ID", "")
     )
+    bedrock_knowledge_base_data_source_id: str = Field(
+        default_factory=lambda: os.getenv("BEDROCK_KNOWLEDGE_BASE_DATA_SOURCE_ID", "")
+    )
     bedrock_guardrail_id: str = Field(
         default_factory=lambda: os.getenv("BEDROCK_GUARDRAIL_ID", "")
     )
@@ -30,6 +33,13 @@ class Settings(BaseModel):
     @property
     def has_knowledge_base_config(self) -> bool:
         return bool(self.bedrock_knowledge_base_id)
+
+    @property
+    def has_knowledge_base_ingestion_config(self) -> bool:
+        return bool(
+            self.bedrock_knowledge_base_id
+            and self.bedrock_knowledge_base_data_source_id
+        )
 
     @property
     def has_guardrail_config(self) -> bool:
